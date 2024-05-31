@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMJzQ5k1GV2z7rgJgRiMko74E-eOZudNkgPj5VM9N0uA&s"/> 
+    <script src="https://kit.fontawesome.com/5ba2efb169.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* border:1px solid red; */
+        }
+        .main{
+            display:flex;
+        }
+        .first{
+            width:50%;
+        }
+        .ima{
+            width:100%;
+        }
+        .two{
+            width:50%;
+            display:flex;
+            justify-content: center;
+        }
+        .formy{
+            display:flex;
+            flex-direction:column;
+            width:70%;
+            box-shadow: 1px 2px 1px grey;
+            padding:3%;
+            margin-top: 2%;
+
+        }
+        .head{
+            color:#0a325d;
+           text-align: center;
+           margin-top:3%;
+
+        }
+        label{
+            color:#0c4676;
+            font-size: 20px;
+            margin-top:2%;
+            margin-bottom:0.5%;
+        }
+        input[type="text"],[type="email"],[type="password"]{
+            border:1px solid grey;
+            padding:2%;
+            box-shadow: 2px 2px 2px grey;
+            border-radius:30px ;
+
+        }
+        input[type="checkbox"]{
+            accent-color: #0c4676;
+        }
+        .check{
+            padding:1%;
+            /* display:flex;
+            justify-content: space-evenly; */
+        }
+        .btn{
+            background-color: #0c4676;
+            color:white;
+            border:none;
+            border-radius: 5px;
+
+        }
+        .btn:hover{
+            background-color: white;
+            color:#0c4676;
+            border:1px solid #0c4676;
+            /* transform:scale(1.2)
+            transition:0.8  ease-in*/
+            margin-bottom:2%;
+        }
+        .last{
+            margin-top:2%;
+        }
+        h6{
+            color:black;
+            font-size: 15px;
+            display:flex;
+            justify-content: center;
+            margin-top: 1%;
+        }
+        a{
+            text-decoration: none;
+            color:#0c4676;
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+      <div class="first">
+        <img src="https://i.pinimg.com/originals/fe/93/b0/fe93b053043276b38386e625295af6cc.gif" alt="signup" class="ima"/>
+
+      </div>
+      
+      <div class="two">
+        <form class="formy">
+            <h1 class="head">SignUp</h1>
+            <label><i class="fa-regular fa-user"></i>&nbsp;Username</label>
+            <input type="text" placeholder="Enter Username" name="username" required/>
+            <label><i class="fa-solid fa-envelope"></i>&nbsp;Email</label>
+            <input type="email" placeholder="Enter email" name="email" required/>
+            <label><i class="fa-solid fa-phone"></i>&nbsp;Phone Number</label>
+            <input type="text" placeholder="Enter Number" name="number" required/>
+            <label><i class="fa-solid fa-lock"></i>&nbsp;Password</label>
+            <input type="password" placeholder="Enter password" name="password" required/>
+            <label><i class="fa-solid fa-lock"></i>&nbsp;Confirm Password</label>
+            <input type="password" placeholder="Enter Confirm password" name="confirmpassword" required/>
+            <div class="check">
+                <input type="checkbox"/>&nbsp;&nbsp;<label>I accept Terms& conditions</label>
+
+
+            </div>
+            <button class="btn">Submit</button><br/><hr/>
+            <div class="last">
+                <h6>Already have an account<a href="#">&nbsp;Login<i class="fa-solid fa-right-to-bracket"></i></a></h6>
+                <h6><a href="#">Forget Password</a></h6>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
